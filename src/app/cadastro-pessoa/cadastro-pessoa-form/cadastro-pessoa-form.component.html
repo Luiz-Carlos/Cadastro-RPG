@@ -1,0 +1,167 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+<div class="w3-container w3-black">
+
+<h1>Cadastro de pessoa</h1>
+<form #f="ngForm" (submit)="form_submit(f)">
+<div class="form-group">
+<i class="ra ra-player ra-2x"></i>
+<label>Nome</label>
+<input class="form-control" type="text" ngModel name="nome" placeholder="Nome" />
+</div>
+
+<div class="form-group">
+<i class="ra ra-player-pyromaniac ra-2x"></i>
+<label>Nick</label>	
+	<input class="form-control" type="text" ngModel  name="nick" placeholder="Nick" />
+</div>
+
+<div class="form-group">
+<i class="ra ra-book ra-2x"></i>
+<label>Email</label>
+	<input class="form-control" type="text" ngModel name="email" placeholder="Email" />
+
+</div>
+    <label>Escolha sua Classe</label>
+    <div class="form-group">
+        <div class="radio">
+		<i class="ra ra-axe ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="classe" value="Bárbaro" ng-model="formData.classe">
+                Bárbaro
+            </label>
+        </div>
+		
+        <div class="radio">
+		<i class="ra ra-fire ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="classe" value="Bruxo" ng-model="formData.classe">
+                Bruxo
+            </label>
+        </div>
+
+		<div class="radio">
+		<i class="ra ra-ankh ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="classe" value="Acólito" ng-model="formData.classe">
+                Acólito
+            </label>
+        </div>
+		
+		<div class="radio">
+		<i class="ra ra-archer ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="classe" value="Arqueiro" ng-model="formData.classe">
+                Arqueiro
+            </label>
+        </div>
+		
+		<div class="radio">
+		<i class="ra ra-daggers ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="classe" value="Ladino" ng-model="formData.classe">
+                Ladino
+            </label>
+        </div>
+		
+		<div class="radio">
+		<i class="ra ra-shield ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="classe" value="Paladino" ng-model="formData.classe">
+                Paladino
+            </label>
+        </div>
+	
+
+    <label>Sexo</label>
+    <div class="form-group">
+        <div class="radio">
+		<i class="fa fa-mars" style="font-size:36px;"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="sexo" value="Masculino" ng-model="formData.sexo">
+                Masculino
+            </label>
+        </div>
+		
+      <div class="radio">
+		<i class="fa fa-venus" style="font-size:36px;"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="sexo" value="Femino" ng-model="formData.sexo">
+                  Femino
+            </label>
+        </div>
+    </div>
+
+
+    <label>Caracteristicas</label>
+    <div class="form-group">
+        <div class="radio">
+		<i class="ra ra-muscle-up ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="carac" value="Força" ng-model="formData.carac">
+                Força
+            </label>
+        </div>
+		
+		<div class="radio">
+		<i class="ra ra-hearts ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="carac" value="Constituição" ng-model="formData.carac">
+                Constituição
+            </label>
+        </div>
+	
+	<div class="radio">
+	<i class="ra ra-player-dodge ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="carac" value="Destreza" ng-model="formData.carac">
+                Destreza
+            </label>
+     </div>
+ 
+	
+	<div class="radio">
+	<i class="ra ra-aware ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="carac" value="Inteligência" ng-model="formData.carac">
+                Inteligência
+            </label>
+    </div>
+	
+	<div class="radio">
+	<i class=" ra ra-aura ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="carac" value="Sabedoria" ng-model="formData.carac">
+                Sabedoria
+            </label>
+     </div>
+
+	
+	<div class="radio">
+	<i  class=" ra ra-player-king ra-2x"></i>
+            <label>
+                <input class="form-control" type="radio" ngModel name="carac" value="Carisma" ng-model="formData.carac">
+                Carisma
+            </label>
+    </div>
+
+</div>
+	
+	
+</div>
+<br>
+	<button type="submit">Cadastro</button>
+<br>
+</form>
+
+<ul>
+	<li *ngFor="let p of pessoas">
+		{{ p.nome + ' ' + p.nick + ' ' + p.email + ' ' + p.classe + ' ' + p.sexo + ' ' + p.carac}}
+	</li>
+</ul>

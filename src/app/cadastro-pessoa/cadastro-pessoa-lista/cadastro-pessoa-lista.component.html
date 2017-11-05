@@ -1,0 +1,33 @@
+<div class="w3-container w3-black">
+	<h2>Pessoas Cadastradas</h2>
+
+<div class="row justify-content-start">
+    <div class="col-9">
+        <table class="table">
+            <thead>
+                <tr>
+					<th>N</th>
+                    <th>Nome</th>
+                    <th>Nick</th>
+                    <th>Email</th>
+					<th>Classe</th>
+					<th>Sexo</th>
+					<th>Caracteristica</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let p of pessoas, let i = index">
+                    <th scope="row">{{i + 1}}</th>
+					<td>{{p?.nome }}</td>
+                    <td>{{p?.nick }}</td>
+                    <td>{{p?.email }}</td>
+					<td>{{p?.classe }}</td>
+					<td>{{p?.sexo }}</td>
+					<td>{{p?.carac }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

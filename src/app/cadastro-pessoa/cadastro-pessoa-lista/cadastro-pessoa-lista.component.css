@@ -1,0 +1,6 @@
+table {
+  border-spacing: 15px 10px;
+}
+table>tbody>tr>td {
+  padding: 5px 20px;
+}
