@@ -7,18 +7,21 @@ import { AppComponent } from './app.component';
 
 import { AngularFireModule } from 'angularfire2/index';
 import { FirebaseConfig } from './../environments/firebase.config';
-
+import {AppRoutingModule} from './app.routing.module';
 import { CadastroPessoaModule } from './cadastro-pessoa/cadastro-pessoa.module';
+import { LoginModule  } from './login/login.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
 	FormsModule,
 	HttpModule, CadastroPessoaModule, 
-	AngularFireModule.initializeApp(FirebaseConfig)
+	AngularFireModule.initializeApp(FirebaseConfig),
+	AppRoutingModule,
+	LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
