@@ -6,6 +6,7 @@ import { CadastroPessoaComponent } from './cadastro-pessoa.component';
 import { CadastroPessoaFormComponent } from './cadastro-pessoa-form/cadastro-pessoa-form.component';
 import { CadastroPessoaListaComponent } from './cadastro-pessoa-lista/cadastro-pessoa-lista.component';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { CadastroEmailComponent } from './cadastro-email/cadastro-email.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { AngularFireDatabase } from 'angularfire2/database';
   ],
   providers: [AngularFireDatabase],
   exports: [CadastroPessoaFormComponent, CadastroPessoaListaComponent, CadastroPessoaComponent],
-  declarations: [CadastroPessoaFormComponent, CadastroPessoaListaComponent, CadastroPessoaComponent]
+  declarations: [CadastroPessoaFormComponent, CadastroPessoaListaComponent, CadastroPessoaComponent, CadastroEmailComponent]
 })
 export class CadastroPessoaModule { }

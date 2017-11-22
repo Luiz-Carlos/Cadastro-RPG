@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+<div class="overlay">
+
+<h1>Cadastrar Email</h1>
+ <form #f="ngForm" (submit)="form_sing(f)" >
+
+<label >Email</label>
+<div class="input-group">
+<span class="input-group-addon"><i class="ra ra-book ra-fw"></i></span>
+	<input  class="form-control" type="text" ngModel name="email" placeholder="Email" />
+</div>
+
+<label >Senha</label>
+<div class="input-group">
+<span class="input-group-addon"><i class="ra ra-three-keys ra-fw"></i></span>
+	<input  class="form-control" type="password" ngModel name="senha"  placeholder="Senha" />
+</div>
+
+<button type="submit">Cadastro</button>
+
+</form>
