@@ -6,7 +6,7 @@
 
 
 <div class="w3-container w3-black">
-<button (click)="form_logout()" type="button">deslogar</button>
+<button class="treta" (click)="form_logout()" type="button">Deslogar</button>
 <h1>Cadastro de pessoa</h1>
 <form #f="ngForm" (submit)="form_submit(f)">
 <label>Nome</label>
@@ -16,7 +16,7 @@
 </div>
 
 
-<label>Nick</label>	
+<label>Nick</label>
 <div class="input-group">
 <span class="input-group-addon"><i class="ra ra-player-pyromaniac ra-fw"></i></span>
 <input class="form-control" type="text" ngModel  name="nick" placeholder="Nick" />
@@ -38,7 +38,7 @@
                 Bárbaro
             </label>
         </div>
-		
+
         <div class="radio">
 		<i class="ra ra-fire ra-2x"></i>
             <label>
@@ -54,7 +54,7 @@
                 Acólito
             </label>
         </div>
-		
+
 		<div class="radio">
 		<i class="ra ra-archer ra-2x"></i>
             <label>
@@ -62,7 +62,7 @@
                 Arqueiro
             </label>
         </div>
-		
+
 		<div class="radio">
 		<i class="ra ra-daggers ra-2x"></i>
             <label>
@@ -70,22 +70,22 @@
                 Ladino
             </label>
         </div>
-		
+
 		<div class="radio">
 		<i class="ra ra-shield ra-2x"></i>
             <label>
                 <input  type="radio" ngModel name="classe" value="Paladino" ng-model="formData.classe">
 				Paladino
-             </label> 
-            
+             </label>
+
         </div>
-		
-<br>
-
-
 
 <br>
-	
+
+
+
+<br>
+
 
     <label >Sexo</label>
 	<br>
@@ -94,8 +94,8 @@
 <div>
 <div class="treta" >
 <i class="fa fa-mars"  style="margin-right:90px;font-size:36px;">  </i><i class="fa fa-venus" style="font-size:36px;"></i>
-</div>	
-</div>	
+</div>
+</div>
 
     <div class="form-group" >
         <div class="radio-inline">
@@ -104,13 +104,13 @@
 				Masculino
 			</label>
         </div>
-		
+
       <div class="radio-inline">
             <label>
 			 <input  type="radio" ngModel name="sexo" value="Femino" ng-model="formData.sexo">
 			 Femino
 			</label>
-               
+
         </div>
     </div>
 
@@ -124,8 +124,8 @@
                 Força
             </label>
         </div>
-		
-		
+
+
 		<div class="radio">
 		<i class="ra ra-hearts ra-2x"></i>
             <label>
@@ -133,7 +133,7 @@
                 Constituição
             </label>
         </div>
-	
+
 	<div class="radio">
 	<i class="ra ra-player-dodge ra-2x"></i>
             <label>
@@ -141,8 +141,8 @@
                 Destreza
             </label>
      </div>
- 
-	
+
+
 	<div class="radio">
 	<i class="ra ra-aware ra-2x"></i>
             <label>
@@ -150,7 +150,7 @@
                 Inteligência
             </label>
     </div>
-	
+
 	<div class="radio">
 	<i class=" ra ra-aura ra-2x"></i>
             <label>
@@ -159,7 +159,7 @@
             </label>
      </div>
 
-	
+
 	<div class="radio">
 	<i  class=" ra ra-player-king ra-2x"></i>
             <label>
@@ -169,11 +169,11 @@
     </div>
 
 </div>
-	
-	
+
+
 </div>
 <br>
-	<button type="submit">Cadastro</button>
+	<button class="treta" type="submit">Cadastro</button>
 <br>
 </form>
 

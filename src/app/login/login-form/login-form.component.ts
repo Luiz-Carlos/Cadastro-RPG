@@ -7,11 +7,14 @@ import { NgForm } from '@angular/forms';
   selector: 'app-login-form',
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.css']
-  
+
 })
 export class LoginFormComponent implements OnInit {
 
-  constructor(private afAuth: AngularFireAuth, private router: Router) { }
+  constructor(
+    private afAuth: AngularFireAuth,
+     private router: Router)
+      { }
 
 
   ngOnInit() {}
@@ -19,11 +22,19 @@ export class LoginFormComponent implements OnInit {
 		  if(!f.valid)
 			  return;
 		  this.afAuth.auth.signInWithEmailAndPassword(f.controls.email.value, f.controls.senha.value)
-		  .then(ok => {
-			  this.router.navigate(["/cadastro"]);
-			});
-			f.controls.email.setValue('');
-			f.controls.senha.setValue('');
-  }
+		    .then(value => {
+			       this.router.navigate(["/cadastro"]);
+			})
 
-}
+      .catch(error => {
+    var errorCode = error.code;
+     var errorMessage = error.message;
+      if (errorCode == 'auth/invalid-email') {
+        alert('Email Invalido');
+      } else {
+        alert(errorMessage);
+      }
+    console.log(error);
+      });
+      }
+  }

@@ -6,9 +6,9 @@ import { CadastroPessoaComponent } from './cadastro-pessoa/cadastro-pessoa.compo
 import { CadastroEmailComponent } from './cadastro-pessoa/cadastro-email/cadastro-email.component';
 
 const APP_ROUTES: Routes = [
-{ path: '', component: LoginFormComponent },
-{ path: 'cadastro', component: CadastroPessoaComponent },
-{ path: 'email', component: CadastroEmailComponent }
+{ path: '', component: CadastroEmailComponent },
+{ path: 'login', component: LoginFormComponent },
+{ path: 'cadastro', component: CadastroPessoaComponent }
 ]
 
 @NgModule({
