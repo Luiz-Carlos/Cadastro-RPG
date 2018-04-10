@@ -10,6 +10,7 @@ import { FirebaseConfig } from './../environments/firebase.config';
 import {AppRoutingModule} from './app.routing.module';
 import { CadastroPessoaModule } from './cadastro-pessoa/cadastro-pessoa.module';
 import { LoginModule  } from './login/login.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginModule  } from './login/login.module';
 	FormsModule,
 	HttpModule, CadastroPessoaModule, 
 	AngularFireModule.initializeApp(FirebaseConfig),
-	AppRoutingModule,
+  AppRoutingModule,
+  HomeModule,
 	LoginModule
   ],
   providers: [],

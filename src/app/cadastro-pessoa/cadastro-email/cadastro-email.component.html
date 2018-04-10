@@ -1,27 +1,24 @@
-
-
-
-
-
-
-
-<div class="overlay">
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-container bg-black">
 <h1>Cadastrar Email</h1>
  <form #f="ngForm" (submit)="form_sing(f)" >
 
-<label >Email</label>
-<div class="input-group">
+<div>
+	<label >Email</label>
+	<div class="input-group">
 <span class="input-group-addon"><i class="ra ra-book ra-fw"></i></span>
-	<input  class="form-control" type="text" ngModel name="email" placeholder="Email" />
+	<input   type="text" ngModel name="email" placeholder="Email" />
+	</div>
 </div>
-
-<label >Senha</label>
-<div class="input-group">
+<div>
+	<label >Senha</label>
+	<div class="input-group">
 <span class="input-group-addon"><i class="ra ra-three-keys ra-fw"></i></span>
-	<input  class="form-control" type="password" ngModel name="senha"  placeholder="Senha" />
+	<input   type="password" ngModel name="senha"  placeholder="Senha" />
+	</div>
 </div>
 
-<button class="form-control" type="submit">Cadastro</button>
+<button  type="submit">Cadastro</button>
 
 </form>
+</div>

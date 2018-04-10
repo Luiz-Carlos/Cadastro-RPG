@@ -1,0 +1,21 @@
+.navbar.navbar-dark.bg-dark a{
+    color: white;
+   background-color: black;
+}
+
+.nav-menu{
+    overflow: hidden;
+   background-color: black;
+   color: white;
+   display: block;
+}
+
+.navlinks a{
+   background-color: black;
+   float: left;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}

@@ -3,3 +3,5 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~rpg-awesome/css/rpg-awesome.min.css';
 @import '~font-awesome/css/font-awesome.min.css';
+
+html { background-color: black; }
